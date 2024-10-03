@@ -103,3 +103,35 @@ p {
     font-weight: bold;
     color: #4CAF50;
 }
+
+@media (min-width: 480px) {
+    .container {
+        padding: 30px;
+    }
+
+    .list-form h1 {
+        font-size: 28px;
+    }
+
+    .addTarefa {
+        flex-direction: row;
+    }
+
+    #input-text {
+        flex-grow: 1;
+        margin-bottom: 0;
+        border-radius: 5px 0 0 5px;
+    }
+
+    #btnAdd {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .li-tarefas {
+        flex-wrap: nowrap;
+    }
+
+    .btn-remove {
+        margin-top: 0;
+    }
+}
