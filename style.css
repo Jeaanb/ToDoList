@@ -13,46 +13,50 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 10px;
 }
 
 .container {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 90%;
+    padding: 15px;
+    width: 100%;
     max-width: 500px;
 }
 
 .list-form h1 {
     color: #333;
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .addTarefa {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    flex-direction: column;
 }
 
 #input-text {
-    flex-grow: 1;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px;
-    font-size: 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 #btnAdd {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 0 5px 5px 0;
+    padding: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 #btnAdd:hover {
@@ -60,7 +64,7 @@ body {
 }
 
 .lista {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #lista-de-tarefas {
@@ -72,21 +76,23 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .btn-remove {
     background-color: #f44336;
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 4px 8px;
     border-radius: 3px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     transition: background-color 0.3s;
+    margin-top: 5px;
 }
 
 .btn-remove:hover {
@@ -96,12 +102,40 @@ body {
 p {
     text-align: center;
     color: #666;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #total {
     font-weight: bold;
     color: #4CAF50;
+}
+
+@media (min-width: 400px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .list-form h1 {
+        font-size: 24px;
+    }
+
+    #input-text, #btnAdd {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .btn-remove {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 480px) {
@@ -125,6 +159,7 @@ p {
 
     #btnAdd {
         border-radius: 0 5px 5px 0;
+        width: auto;
     }
 
     .li-tarefas {
